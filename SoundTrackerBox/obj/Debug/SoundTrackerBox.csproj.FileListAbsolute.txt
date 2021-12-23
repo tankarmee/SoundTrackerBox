@@ -1,0 +1,9 @@
+D:\VSCsharpProjects\SoundTrackerBox\bin\Debug\SoundTrackerBox.exe
+D:\VSCsharpProjects\SoundTrackerBox\bin\Debug\SoundTrackerBox.pdb
+D:\VSCsharpProjects\SoundTrackerBox\obj\Debug\SoundTrackerBox.csproj.AssemblyReference.cache
+D:\VSCsharpProjects\SoundTrackerBox\obj\Debug\SoundTrackerBox.Form1.resources
+D:\VSCsharpProjects\SoundTrackerBox\obj\Debug\SoundTrackerBox.Properties.Resources.resources
+D:\VSCsharpProjects\SoundTrackerBox\obj\Debug\SoundTrackerBox.csproj.GenerateResource.cache
+D:\VSCsharpProjects\SoundTrackerBox\obj\Debug\SoundTrackerBox.csproj.CoreCompileInputs.cache
+D:\VSCsharpProjects\SoundTrackerBox\obj\Debug\SoundTrackerBox.exe
+D:\VSCsharpProjects\SoundTrackerBox\obj\Debug\SoundTrackerBox.pdb
