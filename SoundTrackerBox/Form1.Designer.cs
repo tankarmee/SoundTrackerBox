@@ -42,6 +42,7 @@ namespace SoundTrackerBox
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.PatternB = new System.Windows.Forms.TextBox();
+            this.StopButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,13 +53,14 @@ namespace SoundTrackerBox
             this.PatternA.Location = new System.Drawing.Point(144, 42);
             this.PatternA.Name = "PatternA";
             this.PatternA.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.PatternA.Size = new System.Drawing.Size(644, 22);
+            this.PatternA.Size = new System.Drawing.Size(716, 22);
             this.PatternA.TabIndex = 0;
             this.PatternA.TextChanged += new System.EventHandler(this.PatternA_TextChanged);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.Controls.Add(this.StopButton);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
@@ -70,7 +72,7 @@ namespace SoundTrackerBox
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 37);
+            this.panel1.Size = new System.Drawing.Size(872, 37);
             this.panel1.TabIndex = 1;
             // 
             // button3
@@ -118,7 +120,7 @@ namespace SoundTrackerBox
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.linkLabel1.Location = new System.Drawing.Point(736, 9);
+            this.linkLabel1.Location = new System.Drawing.Point(808, 9);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(52, 17);
             this.linkLabel1.TabIndex = 4;
@@ -194,20 +196,33 @@ namespace SoundTrackerBox
             this.PatternB.Location = new System.Drawing.Point(144, 80);
             this.PatternB.Name = "PatternB";
             this.PatternB.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.PatternB.Size = new System.Drawing.Size(644, 22);
+            this.PatternB.Size = new System.Drawing.Size(716, 22);
             this.PatternB.TabIndex = 5;
+            // 
+            // StopButton
+            // 
+            this.StopButton.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.StopButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.StopButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.StopButton.Location = new System.Drawing.Point(722, 6);
+            this.StopButton.Name = "StopButton";
+            this.StopButton.Size = new System.Drawing.Size(75, 23);
+            this.StopButton.TabIndex = 8;
+            this.StopButton.Text = "Stop";
+            this.StopButton.UseVisualStyleBackColor = false;
+            this.StopButton.Click += new System.EventHandler(this.StopButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(872, 120);
             this.Controls.Add(this.PatternB);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PatternA);
-            this.MinimumSize = new System.Drawing.Size(818, 497);
+            this.MinimumSize = new System.Drawing.Size(890, 167);
             this.Name = "Form1";
             this.Text = "Sound Tracker Box Machine 1.0";
             this.panel1.ResumeLayout(false);
@@ -232,6 +247,7 @@ namespace SoundTrackerBox
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.TextBox PatternB;
+        private System.Windows.Forms.Button StopButton;
     }
 }
 

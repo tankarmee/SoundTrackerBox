@@ -7,3 +7,5 @@ D:\VSCsharpProjects\SoundTrackerBox\obj\Debug\SoundTrackerBox.csproj.GenerateRes
 D:\VSCsharpProjects\SoundTrackerBox\obj\Debug\SoundTrackerBox.csproj.CoreCompileInputs.cache
 D:\VSCsharpProjects\SoundTrackerBox\obj\Debug\SoundTrackerBox.exe
 D:\VSCsharpProjects\SoundTrackerBox\obj\Debug\SoundTrackerBox.pdb
+D:\VSCsharpProjects\SoundTrackerBox\obj\Debug\Interop.WMPLib.dll
+D:\VSCsharpProjects\SoundTrackerBox\obj\Debug\SoundTrackerBox.csproj.ResolveComReference.cache

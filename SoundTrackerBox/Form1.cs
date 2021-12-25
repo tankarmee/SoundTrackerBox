@@ -6,13 +6,14 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-
+using System.Threading;
 namespace SoundTrackerBox
 {
     public partial class Form1 : Form
     {
-        TrackerBox _trackbox = new TrackerBox();
-
+        SoundTrackerBox _trackbox = new SoundTrackerBox();
+        Thread rhead2;
+        Thread rhead1;
         public Form1()
         {
             InitializeComponent();
@@ -46,11 +47,15 @@ namespace SoundTrackerBox
         {
             if(checkBox1.Checked == true)
             {
-                _trackbox.PlayWheepMachine(Convert.ToInt32(PatternLength.Text), Convert.ToInt32(LetterDelay.Text), PatternA.Text);
+                rhead2 = new Thread(() =>
+                _trackbox.PlayWheepMachine(Convert.ToInt32(PatternLength.Text), Convert.ToInt32(LetterDelay.Text), PatternA.Text));
+                rhead2.Start();
             }
             if (checkBox2.Checked == true)
             {
-                _trackbox.PlayBassMachine(Convert.ToInt32(PatternLength.Text), Convert.ToInt32(LetterDelay.Text), PatternB.Text);
+                rhead1 = new Thread(() => _trackbox.PlayBassMachine(Convert.ToInt32(PatternLength.Text), Convert.ToInt32(LetterDelay.Text), PatternB.Text));/*
+                _trackbox.PlayBassMachine(Convert.ToInt32(PatternLength.Text), Convert.ToInt32(LetterDelay.Text), PatternB.Text);*/
+                rhead1.Start();
             }
             /*if()
             {
@@ -72,5 +77,10 @@ namespace SoundTrackerBox
             }
         }
 
+        private void StopButton_Click(object sender, EventArgs e)
+        {
+            rhead2.Abort();
+            rhead1.Abort();
+        }
     }
 }
